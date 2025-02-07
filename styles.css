@@ -15,11 +15,15 @@ body{
 }
 
 #h4id{
-    color: green;
-    font-size: 30px;
+    color: pblack;
+    font-size: 40px;
     position: absolute;
-    left: 100px;
-    top: 10px;
+    left: 850px;
+    top: 200px;
+}
+
+#my-bio-main ul{
+    list-style-type: "\2705";
 }
 
 h3{
@@ -27,18 +31,33 @@ h3{
     margin-top: 10px;
 }
 
-.my_bio{
-    width: 400px;
-    height: 300px;
-    left: 160px;
-    top: 60px;
-    color: blue;
+.my-bio{
+    width: 280px;
+    height: 150px;
+    left: 750px;
+    top: 190px;
     font-size: 30px;
-    background-color: white;
-    position: absolute;
+    position: relative;
+    z-index: 10;
+    color: bisque;
 }
 
-.image{
+.bio-background-image{
+    width: 400px;
+    height: 404px;
+    position: absolute;
+    object-fit: cover;
+    border-radius: 30px;
+    left: 730px;
+    top: 300px;
+    transition: all 0.3s ease-in-out;
+}
+
+.bio-background-image:hover{
+    transform: scale(1.05);
+}
+
+.girl-image{
     width: 300px;
     height: 300px;
     top: 140px;
@@ -49,43 +68,51 @@ h3{
     transition: all 0.3s ease-in-out;
 }
 
-.image:hover{
+.girl-image:hover{
     transform: scale(1.05);
 }
 
-.ClickButton{
+.girl-text{
     position: absolute;
-    top: 50px;
-    left: 430px;
+    top: 450px;
+    left: 460px;
+    font-size: 30px;
+    color: purple;
+}
+
+.click-on-button{
+    position: absolute;
+    top: 190px;
+    left: 700px;
     cursor: pointer;
     border: none;
-    padding: 15px 30px;
+    padding: 15px 20px;
     background-color: orange; 
-    margin-top: 20px;
     border-radius: 10px;
     transition: all 0.3s ease-in-out;
+    z-index: 10;
 }
 
-.ClickButton a{
-    text-decoration: none;
-    color: black;
-    font-size: 18px;
-}
-
-.ClickButton:hover{
+.click-on-button:hover{
     transform: scale(1.2);
 }
 
-.girltext{
-    position: absolute;
-    top: 450px;
-    left: 393px;
+.button-me-data a{
+    text-decoration: none;
+    color: black;
     font-size: 30px;
 }
 
-.buttontext{
-    position: absolute;
-    top: 190px;
-    left: 160px;
+.github-button{
+    position: relative;
+    top: 170px;
+    left: 755px;
     font-size: 30px;
+    z-index: 10;
+    a:hover{
+        color: yellow;
+    }
+    a{
+        color: black;
+    }
 }
